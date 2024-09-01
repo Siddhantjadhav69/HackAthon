@@ -1,0 +1,228 @@
+/* Basic Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for body text */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Darker gray text color */
+    line-height: 1.6; /* Comfortable line height */
+}
+
+header {
+    background-color: #3498db; /* Blue for header */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Center the heading */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger heading size */
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-top: 10px;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the value to control the spacing */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Add padding to navigation links */
+    border-radius: 5px; /* Round the corners of navigation links */
+    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+    font-size: 0.9rem; /* Reduce the font size */
+}
+
+nav a:hover {
+    background-color: #2980b9; /* Change background color on hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #f2f2f2; /* Slightly darker gray for main section */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #e0e0e0; /* Light background for hero section */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    font-size: 2rem; /* Larger heading for section titles */
+    margin-bottom: 10px;
+}
+
+/* Event and Service Lists */
+#event-list, #service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-item, .service-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    background-color: white; /* White background for boxes */
+}
+
+.event-item h3, .service-item h3 {
+    font-size: 1.2rem; /* Slightly larger heading inside boxes */
+    margin-bottom: 5px;
+}
+
+.event-item p, .service-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.event-item a, .service-item a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.event-item a:hover, .service-item a:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Contact Form */
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+#contact form {
+    width: 450px; /* Increase the width */
+    margin: 0 auto;
+    background-color: #f5f5f5; /* Subtle background for the form */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem; /* Standard input size */
+}
+
+#contact textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+#contact button[type="submit"] {
+    background-color: #3498db; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Search Button */
+#search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between input and button */
+    font-size: 1rem; /* Standard input size */
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#search-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+/* Map */
+#map {
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px; /* Rounded corners for the map container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#mapid {
+    height: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#about {
+    text-align: center;
+    padding: 20px;
+}
+
+#about h2 {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for a more elegant look */
+    font-size: 2.5rem; /* Increase the font size for a bolder look */
+    margin-bottom: 15px; /* Increase the margin for more visual space */
+}
+#events h2, #services h2 {
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for a more elegant look */
+    font-size: 2rem; /* Increase the font size for a bolder look */
+    margin-bottom: 15px; /* Increase the margin for more visual space */
+    text-align: center; /* Center the titles */
+}
