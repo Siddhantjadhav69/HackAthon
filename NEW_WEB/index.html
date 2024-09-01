@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Community Connect</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    <header>
+        <nav>
+            <div class="logo">Community Connect</div>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#submit-section">Submit</a></li>
+                <li><a href="admin.html">Admin Panel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Local Events and Services</h1>
+        <p>Find what's happening in your community</p>
+        <input type="text" placeholder="Search events, services, or locations..." id="search-bar">
+    </section>
+
+    <section id="events">
+        <h2>Featured Events</h2>
+        <div class="events-container">
+            <!-- Event cards will be generated here by JavaScript -->
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Local Services</h2>
+        <div class="services-container">
+            <!-- Service cards will be generated here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Submit Section & Form Side by Side -->
+    <section id="submit-section" class="submit-section">
+        <div class="submit-info">
+            <h2>Submit Your Event or Service</h2>
+            <p>Share your event or service with the community by filling out the form. We'll review it and get it listed on the site.</p>
+        </div>
+        <div class="submit-form">
+            <form id="submit-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="date" id="date">
+                <textarea id="description" placeholder="Description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Community Connect. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

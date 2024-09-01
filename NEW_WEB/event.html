@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event/Service Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Community Connect</div>
+        </nav>
+    </header>
+
+    <section class="detail-content">
+        <div class="detail-header">
+            <h1 id="detail-title">Title</h1>
+            <p id="detail-date-location">Date | Location</p>
+        </div>
+        <div class="detail-body">
+            <p id="detail-description">Detailed description of the event or service...</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Community Connect. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Retrieve URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get('title');
+            const description = urlParams.get('description');
+            const date = urlParams.get('date');
+            const location = urlParams.get('location');
+
+            // Populate the page with the event/service details
+            document.getElementById("detail-title").textContent = title;
+            if (date && location) {
+                document.getElementById("detail-date-location").textContent = `${date} | ${location}`;
+            } else if (location) {
+                document.getElementById("detail-date-location").textContent = `${location}`;
+            }
+            document.getElementById("detail-description").textContent = description;
+        });
+    </script>
+</body>
+</html>
